@@ -1,0 +1,49 @@
+<p-table [value]="users" styleClass="table">
+    <ng-template pTemplate="caption">
+        Users List
+    </ng-template>
+    <ng-template pTemplate="header" let-cols>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td pEditableColumn>
+                <p-cellEditor>
+                    <ng-template pTemplate="input">
+                        <input type="text" [(ngModel)]="user.name">
+                    </ng-template>
+                    <ng-template pTemplate="output">
+                        {{user.name}}
+                    </ng-template>
+                </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+                <p-cellEditor>
+                    <ng-template pTemplate="input">
+                        <input type="text" [(ngModel)]="user.email">
+                    </ng-template>
+                    <ng-template pTemplate="output">
+                        {{user.email}}
+                    </ng-template>
+                </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input type="text" [(ngModel)]="user.phone">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{user.phone}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+        </tr>
+    </ng-template>
+</p-table>
+<app-progress-bar></app-progress-bar>
