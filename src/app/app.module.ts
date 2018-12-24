@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StickyheaderComponent } from './stickyheader/stickyheader.component';
 
 
 
@@ -14,8 +15,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressBarComponent
-  ],
+    ProgressBarComponent,
+  StickyheaderComponent],
   imports: [
     BrowserModule,
     FormsModule,
