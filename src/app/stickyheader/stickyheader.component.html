@@ -1,85 +1,115 @@
-<section class="web_homePage" (scroll)="onWindowScroll($event);"> 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark d-block d-md-none" id="topNavHeader">
-    <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand text-center d-block" id="defaultNavBar" href="#">Default Navigation Bar</a>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact-Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<main role="main" class="container">
-    <p>
-        The below sub-header will change to fixed/sticky mode when scrolled.
-    </p>
-    <nav class="navbar subnav-toggle navbar-expand-md navbar-dark bg-dark d-block">
-        <div class="sub-menu-dark-toggle text-center">
-            <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarToggleCollapse" aria-controls="navbarToggleCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-inline pl-1 pr-1">
-                <input type="checkbox" value="1" />
-                <label>Accept</label>
-            </div>
-            <div class="sub-menu-content d-inline">
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-secondary">
-                        <i class="far fa-save"></i>
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                        <i class="far fa-file-pdf"></i>
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                        <i class="fas fa-download"></i>
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                        <i class="fas fa-print"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarToggleCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact-Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
+<section class="web_homePage" (scroll)="onWindowScroll($event);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-block" id="topNavHeader">
+        <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-center d-block" id="defaultNavBar" href="#">Default Navigation Bar</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact-Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <h3>On Scroll Sticky Header</h3>
-        <p>The header will stick to the top when you reach its scroll position.</p>
-        <p>Scroll back up to remove the sticky effect.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-            et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-            et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    </div>
-</main>
+    <main role="main" class="container">
+        <p class="navbar-description">
+            The below sub-header will change to fixed/sticky mode when scrolled.
+        </p>
+        <nav class="navbar subnav-toggle navbar-expand-lg navbar-dark bg-dark d-block">
+            <div class="sub-menu-dark-toggle text-right">
+                <button class="navbar-toggler d-none float-left" type="button" data-toggle="collapse" data-target="#navbarToggleCollapse" aria-controls="navbarToggleCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-inline pl-1 pr-1">
+                    <input type="checkbox" value="1" />
+                    <label>Accept</label>
+                </div>
+                <div class="sub-menu-content d-inline">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-secondary">
+                            <i class="far fa-save"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                            <i class="far fa-file-pdf"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                            <i class="fas fa-print"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse d-lg-none text-left" id="navbarToggleCollapse">
+                    <ul class="navbar-nav mr-auto d-block">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact-Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h3>On Scroll Sticky Header</h3>
+            <p>The header will stick to the top when you reach its scroll position.</p>
+            <p>Scroll back up to remove the sticky effect.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+    </main>
 </section>

@@ -44,3 +44,23 @@ body {
 .subnav-toggle.affix+.jumbotron {
     margin-top: 58px;
 }
+
+.navbar-description {
+    min-height: 48px;
+}
+
+.navbar {
+    min-height: 56px;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .d-lg-none#navbarToggleCollapse {
+		display: none!important;
+	}
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: none;
+    }
+}
