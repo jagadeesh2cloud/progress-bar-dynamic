@@ -53,6 +53,49 @@ body {
     min-height: 56px;
 }
 
+.affix .btn-secondary {
+    background-color: #ffffff;
+}
+
+[class^="header-icon"] {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    width: 12px;
+    height: 16px;
+}
+
+.header-icon-download {
+    background: url('../../assets/icons/ic_download_white.png');
+}
+
+.header-icon-pdf {
+    background: url('../../assets/icons/ic_pdf_white.png');
+}
+
+.header-icon-print {
+    background: url('../../assets/icons/ic_print_white.png');
+}
+
+.header-icon-save {
+    background: url('../../assets/icons/ic_save_white.png');
+}
+
+.affix .header-icon-download {
+    background: url('../../assets/icons/ic_download_red.png');
+}
+
+.affix .header-icon-pdf {
+    background: url('../../assets/icons/ic_pdf_red.png');
+}
+
+.affix .header-icon-print {
+    background: url('../../assets/icons/ic_print_red.png');
+}
+
+.affix .header-icon-save {
+    background: url('../../assets/icons/ic_save_red.png');
+}
+
 @media (min-width: 992px) {
 	.navbar-expand-lg .d-lg-none#navbarToggleCollapse {
 		display: none!important;
