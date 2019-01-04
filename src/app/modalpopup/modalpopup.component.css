@@ -1,0 +1,16 @@
+.notification-body {
+    width: 100%;
+    position: fixed;
+    top:30%;
+    z-index: 9999999999999;
+}
+
+.notification-modal {
+    width: 400px;
+    background-color: #1aa056;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}

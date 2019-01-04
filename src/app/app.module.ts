@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StickyheaderComponent } from './stickyheader/stickyheader.component';
+import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 
 
 
@@ -16,7 +17,8 @@ import { StickyheaderComponent } from './stickyheader/stickyheader.component';
   declarations: [
     AppComponent,
     ProgressBarComponent,
-  StickyheaderComponent],
+  StickyheaderComponent,
+  ModalpopupComponent],
   imports: [
     BrowserModule,
     FormsModule,
