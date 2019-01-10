@@ -1,4 +1,4 @@
-<section class="web_homePage" (scroll)="onWindowScroll($event);">
+<section class="web_homePage" (scroll)="onWindowScrollAndResize($event);" (resize)="onWindowScrollAndResize($event)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-block" id="topNavHeader">
         <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
             aria-expanded="false" aria-label="Toggle navigation">
